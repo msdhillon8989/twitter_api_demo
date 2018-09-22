@@ -35,6 +35,12 @@ class ServiceCommon {
                     }
                 }
         );
+        if(result.size() ==1)
+        {
+            result.put("status",0);
+            result.put("error","No Mutual Friend");
+
+        }
         return result;
     }
 
